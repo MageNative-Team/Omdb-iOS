@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C812A1FCE346FFF72F080E /* Pods_OmdbApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64535C2F2469B6AFD78879E /* Pods_OmdbApp.framework */; };
+		CF32116B265CCC8F00C0314F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32116A265CCC8F00C0314F /* AppDelegate.swift */; };
+		CF32116D265CCC8F00C0314F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32116C265CCC8F00C0314F /* SceneDelegate.swift */; };
+		CF321172265CCC8F00C0314F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF321170265CCC8F00C0314F /* Main.storyboard */; };
+		CF321174265CCC9800C0314F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF321173265CCC9800C0314F /* Assets.xcassets */; };
+		CF321177265CCC9800C0314F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF321175265CCC9800C0314F /* LaunchScreen.storyboard */; };
+		CF321194265CD5C300C0314F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF321193265CD5C300C0314F /* SearchViewController.swift */; };
+		CF321198265CD74500C0314F /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF321197265CD74500C0314F /* DynamicColor.swift */; };
+		CF32119D265CE93400C0314F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32119C265CE93400C0314F /* Service.swift */; };
+		CF3211A0265CE9EB00C0314F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32119F265CE9EB00C0314F /* Logger.swift */; };
+		CF3211A4265CF42B00C0314F /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3211A3265CF42B00C0314F /* AppSetup.swift */; };
+		CF3211A9265CF5BE00C0314F /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3211A8265CF5BE00C0314F /* SearchModel.swift */; };
+		CF3211AE265CF85000C0314F /* MovieListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3211AD265CF85000C0314F /* MovieListingViewModel.swift */; };
+		CF3211B3265CFDD600C0314F /* UsefulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3211B2265CFDD600C0314F /* UsefulExtensions.swift */; };
+		CF3211B7265D027100C0314F /* MovieTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3211B5265D027100C0314F /* MovieTVCell.swift */; };
+		CF3211B8265D027100C0314F /* MovieTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF3211B6265D027100C0314F /* MovieTVCell.xib */; };
+		CF3211BB265D23D100C0314F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3211BA265D23D000C0314F /* Toast.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A8502B802BD5D3C46EB47509 /* Pods-OmdbApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbApp.debug.xcconfig"; path = "Target Support Files/Pods-OmdbApp/Pods-OmdbApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C733E923D4436E4E81C752DB /* Pods-OmdbApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmdbApp.release.xcconfig"; path = "Target Support Files/Pods-OmdbApp/Pods-OmdbApp.release.xcconfig"; sourceTree = "<group>"; };
+		CF321167265CCC8F00C0314F /* OmdbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmdbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF32116A265CCC8F00C0314F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF32116C265CCC8F00C0314F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF321171265CCC8F00C0314F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF321173265CCC9800C0314F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF321176265CCC9800C0314F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF321178265CCC9800C0314F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF321193265CD5C300C0314F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CF321197265CD74500C0314F /* DynamicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicColor.swift; sourceTree = "<group>"; };
+		CF32119C265CE93400C0314F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CF32119F265CE9EB00C0314F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CF3211A3265CF42B00C0314F /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
+		CF3211A8265CF5BE00C0314F /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		CF3211AD265CF85000C0314F /* MovieListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingViewModel.swift; sourceTree = "<group>"; };
+		CF3211B2265CFDD600C0314F /* UsefulExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulExtensions.swift; sourceTree = "<group>"; };
+		CF3211B5265D027100C0314F /* MovieTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTVCell.swift; sourceTree = "<group>"; };
+		CF3211B6265D027100C0314F /* MovieTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTVCell.xib; sourceTree = "<group>"; };
+		CF3211BA265D23D000C0314F /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		D64535C2F2469B6AFD78879E /* Pods_OmdbApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmdbApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF321164265CCC8F00C0314F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C812A1FCE346FFF72F080E /* Pods_OmdbApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18374597CBBFFFC21ED6432C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D64535C2F2469B6AFD78879E /* Pods_OmdbApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88BE1945F5CB5B29CCA89D02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8502B802BD5D3C46EB47509 /* Pods-OmdbApp.debug.xcconfig */,
+				C733E923D4436E4E81C752DB /* Pods-OmdbApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF19F9EF265E37260007EED1 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				CF3211BA265D23D000C0314F /* Toast.swift */,
+				CF32119F265CE9EB00C0314F /* Logger.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		CF32115E265CCC8F00C0314F = {
+			isa = PBXGroup;
+			children = (
+				CF321169265CCC8F00C0314F /* OmdbApp */,
+				CF321168265CCC8F00C0314F /* Products */,
+				88BE1945F5CB5B29CCA89D02 /* Pods */,
+				18374597CBBFFFC21ED6432C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF321168265CCC8F00C0314F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF321167265CCC8F00C0314F /* OmdbApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF321169265CCC8F00C0314F /* OmdbApp */ = {
+			isa = PBXGroup;
+			children = (
+				CF19F9EF265E37260007EED1 /* Extras */,
+				CF3211B1265CFDA200C0314F /* Useful Extensions */,
+				CF3211AC265CF80800C0314F /* ViewModel */,
+				CF3211A7265CF59300C0314F /* Model */,
+				CF3211A2265CF3F000C0314F /* AppSetup */,
+				CF32119B265CE91700C0314F /* Service */,
+				CF321196265CD71900C0314F /* Dark Mode Support */,
+				CF321190265CD59800C0314F /* Controller */,
+				CF32116A265CCC8F00C0314F /* AppDelegate.swift */,
+				CF32116C265CCC8F00C0314F /* SceneDelegate.swift */,
+				CF321170265CCC8F00C0314F /* Main.storyboard */,
+				CF321173265CCC9800C0314F /* Assets.xcassets */,
+				CF321175265CCC9800C0314F /* LaunchScreen.storyboard */,
+				CF321178265CCC9800C0314F /* Info.plist */,
+			);
+			path = OmdbApp;
+			sourceTree = "<group>";
+		};
+		CF321190265CD59800C0314F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF321193265CD5C300C0314F /* SearchViewController.swift */,
+				CF3211B5265D027100C0314F /* MovieTVCell.swift */,
+				CF3211B6265D027100C0314F /* MovieTVCell.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF321196265CD71900C0314F /* Dark Mode Support */ = {
+			isa = PBXGroup;
+			children = (
+				CF321197265CD74500C0314F /* DynamicColor.swift */,
+			);
+			path = "Dark Mode Support";
+			sourceTree = "<group>";
+		};
+		CF32119B265CE91700C0314F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CF32119C265CE93400C0314F /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CF3211A2265CF3F000C0314F /* AppSetup */ = {
+			isa = PBXGroup;
+			children = (
+				CF3211A3265CF42B00C0314F /* AppSetup.swift */,
+			);
+			path = AppSetup;
+			sourceTree = "<group>";
+		};
+		CF3211A7265CF59300C0314F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF3211A8265CF5BE00C0314F /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF3211AC265CF80800C0314F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF3211AD265CF85000C0314F /* MovieListingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF3211B1265CFDA200C0314F /* Useful Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF3211B2265CFDD600C0314F /* UsefulExtensions.swift */,
+			);
+			path = "Useful Extensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF321166265CCC8F00C0314F /* OmdbApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF32117B265CCC9800C0314F /* Build configuration list for PBXNativeTarget "OmdbApp" */;
+			buildPhases = (
+				3DD8D6C48B82F9C980A0791A /* [CP] Check Pods Manifest.lock */,
+				CF321163265CCC8F00C0314F /* Sources */,
+				CF321164265CCC8F00C0314F /* Frameworks */,
+				CF321165265CCC8F00C0314F /* Resources */,
+				A01596CC135460A3342D6399 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmdbApp;
+			productName = OmdbApp;
+			productReference = CF321167265CCC8F00C0314F /* OmdbApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF32115F265CCC8F00C0314F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CF321166265CCC8F00C0314F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CF321162265CCC8F00C0314F /* Build configuration list for PBXProject "OmdbApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF32115E265CCC8F00C0314F;
+			productRefGroup = CF321168265CCC8F00C0314F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF321166265CCC8F00C0314F /* OmdbApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF321165265CCC8F00C0314F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF321177265CCC9800C0314F /* LaunchScreen.storyboard in Resources */,
+				CF321174265CCC9800C0314F /* Assets.xcassets in Resources */,
+				CF3211B8265D027100C0314F /* MovieTVCell.xib in Resources */,
+				CF321172265CCC8F00C0314F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DD8D6C48B82F9C980A0791A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmdbApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A01596CC135460A3342D6399 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmdbApp/Pods-OmdbApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmdbApp/Pods-OmdbApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmdbApp/Pods-OmdbApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF321163265CCC8F00C0314F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3211BB265D23D100C0314F /* Toast.swift in Sources */,
+				CF32116B265CCC8F00C0314F /* AppDelegate.swift in Sources */,
+				CF3211B7265D027100C0314F /* MovieTVCell.swift in Sources */,
+				CF321194265CD5C300C0314F /* SearchViewController.swift in Sources */,
+				CF3211A4265CF42B00C0314F /* AppSetup.swift in Sources */,
+				CF321198265CD74500C0314F /* DynamicColor.swift in Sources */,
+				CF3211A0265CE9EB00C0314F /* Logger.swift in Sources */,
+				CF32116D265CCC8F00C0314F /* SceneDelegate.swift in Sources */,
+				CF3211A9265CF5BE00C0314F /* SearchModel.swift in Sources */,
+				CF3211B3265CFDD600C0314F /* UsefulExtensions.swift in Sources */,
+				CF3211AE265CF85000C0314F /* MovieListingViewModel.swift in Sources */,
+				CF32119D265CE93400C0314F /* Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF321170265CCC8F00C0314F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF321171265CCC8F00C0314F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF321175265CCC9800C0314F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF321176265CCC9800C0314F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF321179265CCC9800C0314F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF32117A265CCC9800C0314F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF32117C265CCC9800C0314F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8502B802BD5D3C46EB47509 /* Pods-OmdbApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6LSDGT2M;
+				INFOPLIST_FILE = OmdbApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OmdbApp.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF32117D265CCC9800C0314F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C733E923D4436E4E81C752DB /* Pods-OmdbApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FV6LSDGT2M;
+				INFOPLIST_FILE = OmdbApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OmdbApp.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF321162265CCC8F00C0314F /* Build configuration list for PBXProject "OmdbApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF321179265CCC9800C0314F /* Debug */,
+				CF32117A265CCC9800C0314F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF32117B265CCC9800C0314F /* Build configuration list for PBXNativeTarget "OmdbApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF32117C265CCC9800C0314F /* Debug */,
+				CF32117D265CCC9800C0314F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF32115F265CCC8F00C0314F /* Project object */;
+}

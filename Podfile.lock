@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (5.4.1)
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManager (6.5.6)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - IQKeyboardManager
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SDWebImage
+  - SnapKit (~> 5.0.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DZNEmptyDataSet
+    - IQKeyboardManager
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 5c96f965fb0359921ec5287a89917026d2e31959
+
+COCOAPODS: 1.10.1
