@@ -25,7 +25,6 @@ class MovieListingViewModel {
                 do {
                     let json = try JSON(data: data)
                     self.movieListing.removeAll()
-                    
                     if json["Response"].stringValue == "True"{
                         //  MARK: - Decoding and model population
                         let decoder               = JSONDecoder()

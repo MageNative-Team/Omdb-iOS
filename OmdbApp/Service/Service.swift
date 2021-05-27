@@ -15,6 +15,8 @@ class Service: NSObject{
     static let shareInstance = Service()
     
     func getAllMoviesData(searchString: String,controller:UIViewController,completion: @escaping(_ data: Data) -> ()){
+        controller.view.addLoader()
+        controller.view.isUserInteractionEnabled = false
         
         let encodedsearchString = searchString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? searchString
         
@@ -28,15 +30,17 @@ class Service: NSObject{
         
         AF.request(request).responseData(completionHandler: {
             response in
+            controller.view.stopLoader()
+            controller.view.isUserInteractionEnabled = true
             switch response.result{
             case .success:
                 do {
                     let json              = try JSON(data: response.data!)
                     guard let data = response.data else {return}
                     completion(data)
-
                 }catch let error {
                     Logger.log(.error,"\(error.localizedDescription)==Function: \(#function), line: \(#line), Filepath: \(#filePath)")
+                    controller.view.makeToast(error.localizedDescription,position:.top)
                 }
             case .failure(let error):
                 Logger.log(.error,"\(error.localizedDescription)==Function: \(#function), line: \(#line), Filepath: \(#filePath)")

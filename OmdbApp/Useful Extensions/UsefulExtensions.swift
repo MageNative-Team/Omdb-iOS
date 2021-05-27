@@ -24,7 +24,7 @@ extension UIView {
             activity = UIActivityIndicatorView(style: .whiteLarge)
         }
         activity.frame.size = CGSize(width: 100, height: 100)
-        activity.color = dynamicColor.systemBackground
+        activity.color = dynamicColor.label
         activity.center = self.center
         activity.tag = 12334
         activity.hidesWhenStopped = true

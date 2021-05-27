@@ -22,7 +22,9 @@ class SearchViewController: UIViewController {
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         searchBar.placeholder    = "Search here.."
         searchBar.searchBarStyle = .minimal
-        searchBar.searchTextField.clearButtonMode = .never
+        if #available(iOS 13.0, *) {
+            searchBar.searchTextField.clearButtonMode = .never
+        }
         return searchBar
     }()
     
@@ -76,9 +78,15 @@ extension SearchViewController: UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchBar.endEditing(true)
-        guard let text = searchBar.searchTextField.text else {return}
-        searchTextLatest = text
-        if !text.isEmpty && text.count >= 3{
+        var text: String?
+        if #available(iOS 13.0, *) {
+              text = searchBar.searchTextField.text
+        } else {
+              text = searchBar.text
+        }
+        guard let finalText = text else {return}
+        searchTextLatest    = finalText
+        if !finalText.isEmpty && finalText.count >= 3{
             updateSerch()
         }
     }
